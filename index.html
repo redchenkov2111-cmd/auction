@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>NeoAuction Core</title> 
+    <style rel="stylesheet" href="style.css"></style>
+</head> 
+<body> 
+    <div class="container"> 
+        <h1>NeoAuction: Торги за Квантовый Ключ #001</h1> 
+ 
+        <div class="card"> 
+            <h2>Сделать ставку</h2> 
+            <div class="bid-form"> 
+                <input type="number" id="priceInput" 
+placeholder="Введите сумму..." min="1"> 
+                <button id="buyBtn">Поставить</button> 
+            </div> 
+            <div id="errorView" class="message"></div> 
+        </div> 
+ 
+        <div class="card"> 
+            <h2>Аналитический дашборд</h2> 
+            <div id="dashboard" class="dashboard-grid"> 
+                <div class="metric-box"><div>Статус 
+торгов</div><div class="metric-value" id="statusVal">
+</div></div> 
+                <div class="metric-box"><div>Текущий 
+лидер</div><div class="metric-value" id="highestVal">
+</div></div> 
+                <div class="metric-box"><div>Маржа 
+платформы</div><div class="metric-value" id="profitVal">
+</div></div> 
+            </div> 
+        </div> 
+ 
+        <div class="card"> 
+            <h2>История торгов (Последние ставки)</h2> 
+            <ul id="bidsList"> 
+                <li style="color: #64748b; border: none;">Ставок 
+пока нет</li> 
+            </ul> 
+        </div> 
+    </div> 
+</body> 
+</html>

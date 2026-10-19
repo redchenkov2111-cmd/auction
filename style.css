@@ -1,0 +1,38 @@
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 
+sans-serif; background-color: #0f172a; color: #f8fafc; margin: 
+0; padding: 20px; } 
+        .container { max-width: 800px; margin: 0 auto; display: 
+grid; gap: 20px; } 
+        .card { background-color: #1e293b; border-radius: 10px; 
+padding: 20px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3); 
+border: 1px solid #334155; } 
+        h1, h2 { margin-top: 0; color: #38bdf8; } 
+        .bid-form { display: flex; gap: 10px; margin-bottom: 
+10px; } 
+        input { flex: 1; padding: 12px; border-radius: 6px; 
+border: 1px solid #475569; background: #0f172a; color: white; 
+font-size: 16px; outline: none; } 
+        input:focus { border-color: #38bdf8; } 
+        button { padding: 12px 24px; border-radius: 6px; border: 
+none; background-color: #0284c7; color: white; font-size: 16px; 
+cursor: pointer; font-weight: bold; transition: background-color 
+0.2s; } 
+        button:hover { background-color: #0369a1; } 
+        button:disabled, input:disabled { opacity: 0.5; cursor: 
+not-allowed; } 
+        .message { font-size: 14px; min-height: 20px; padding: 
+6px 0; } 
+        .error { color: #f87171; } 
+        .success { color: #4ade80; } 
+        ul { list-style: none; padding: 0; margin: 0; } 
+        li { background: #0f172a; border-left: 4px solid 
+#38bdf8; padding: 10px 14px; margin-bottom: 8px; border-radius: 
+4px; display: flex; justify-content: space-between; } 
+        .dashboard-grid { display: grid; grid-template-columns: 
+repeat(3, 1fr); gap: 12px; } 
+        .metric-box { background: #0f172a; padding: 12px; 
+border-radius: 6px; text-align: center; } 
+        .metric-value { font-size: 20px; font-weight: bold; 
+color: #38bdf8; margin-top: 4px; } 
+    
