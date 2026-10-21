@@ -1,7 +1,9 @@
 from fastapi import FastAPI 
-from fastapi.responses import HTMLResponse 
+from fastapi.responses import HTMLResponse,FileResponse
+from fastapi.staticfiles import StaticFiles
+
 app = FastAPI(title="NeoAuction Core Engine") 
-@app.get("/", response_class=HTMLResponse) 
-def serve_index(): 
-    with open("index.html", "r", encoding="utf-8") as file: 
-        return file.read()
+app.mount("/static",StaticFiles(directory="static"),name="static")
+@app.get("/", response_class = HTMLResponse) 
+def serve_index():
+    return FileResponse("index.html")
